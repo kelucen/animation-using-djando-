@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block title%}Como ocorre{%endblock%}
+
+{%block content%}
+    <div class="container-sm">
+        <H1>Como ocorre o deslizamento de terra?</H1>
+         <h4>A animação abaixo irá explicar: </h4>
+         <div class="media" style="margin-top:3em;">
+                <video  width="760" height="540" class="img-fluid"  controls>
+                    <source src="{% static 'video/teste1.mp4'%}" type="video/mp4"></source>
+                
+                </video>
+                           
+
+          </div>
+          <div class="media-body" style="margin-top:3em; margin-bottom: 3em;">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+    </div>
+        
+{%endblock%}
